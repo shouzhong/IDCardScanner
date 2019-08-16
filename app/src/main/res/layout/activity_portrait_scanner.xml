@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.shouzhong.idcardscanner.IDCardScannerView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="675px"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="675px"
+        android:gravity="center"
+        android:textColor="#80ffffff"
+        android:textSize="16sp"
+        android:text="请将身份证反面至于此区域，尝试对齐边缘"/>
+</RelativeLayout>
