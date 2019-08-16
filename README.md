@@ -208,6 +208,7 @@ nation | 民族
 birth | 出生年月日：yyyy-MM-dd
 office | 签发机关
 validDate | 有限期限：yyyyMMdd-yyyyMMdd
+path | 图片路径
 
 
 ## 混淆
