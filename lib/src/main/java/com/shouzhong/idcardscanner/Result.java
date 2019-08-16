@@ -12,7 +12,7 @@ public class Result {
     public String office;// 签发机关
     public String validDate;// 有限期限：yyyyMMdd-yyyyMMdd
 
-    public String path;// 照片
+    public String path;// 图片路径
 
     @Override
     public String toString() {
