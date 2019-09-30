@@ -181,10 +181,13 @@ class Utils {
     }
 
     private static final boolean checkDict(final String path) {
-        final byte[] bytes = path.getBytes();
-        final int code = EXOCREngine.nativeInit(bytes);
-        Log.e("kalu", "checkDict ==> code = " + code);
-        return code >= 0;
+        try {
+            final byte[] bytes = path.getBytes("GBK");
+            final int code = EXOCREngine.nativeInit(bytes);
+            Log.e("kalu", "checkDict ==> code = " + code);
+            return code >= 0;
+        } catch (Exception e) {}
+        return false;
     }
 
     private static final boolean checkFile(final Context context, final String pathname) {
